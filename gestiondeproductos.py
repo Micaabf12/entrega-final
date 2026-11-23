@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 # El archivo se crea en la misma carpeta que este programa.
-ARCHIVO_PRODUCTOS = Path("productos.json")
+ARCHIVO_PRODUCTOS = Path(__file__).resolve().parent / "productos.json"
 
 
 def cargar_productos():
